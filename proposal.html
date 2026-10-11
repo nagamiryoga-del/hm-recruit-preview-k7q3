@@ -209,6 +209,15 @@ h1,h2,h3,p,li,dd,dt,span,b{word-break:auto-phrase}.cta p{text-wrap:balance}
 .mfilter{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:-24px 0 36px}.mfilter button{font:inherit;font-size:13.5px;font-weight:700;padding:8px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer}.mfilter button.on{background:var(--dark);color:#fff;border-color:var(--dark)}
 .mem.hide{display:none}
 @media (max-width:900px){.core{padding:60px 0}.core-t{font-size:22px}.egs{grid-template-columns:1fr}.mfilter{margin:-10px 0 24px}.mfilter button{font-size:12.5px;padding:7px 14px}}
+@media (min-width:901px){
+.egs{grid-template-rows:auto auto auto 1fr}
+.eg{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
+.eg-l{align-self:stretch}.eg ul{align-content:start}
+.work-bd>p:not(.work-no){min-height:8em}
+.ep{min-height:10.6em;display:flex;flex-direction:column;justify-content:space-between}
+}
+.ep p{text-wrap:balance;word-break:auto-phrase}
+.eg li p,.eg-l{word-break:auto-phrase}
 </style>
 <script>
 document.documentElement.classList.add('js');
